@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todolist</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<%#= nav_bar fixed: :top  %>
+<div class="container">
+  <div class="col-xs-2 col-sm-6 col-md-11 col-lg-12"><%= yield %></div>
+  <!--div class="col-xs-6 col-sm-5 col-md-4 col-lg-3"><h2>About My Todo List</h2></div-->
+</div>
+</body>
+</html>
